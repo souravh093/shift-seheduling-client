@@ -4,11 +4,11 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <div className="bg-primary text-light py-3">
+    <div className="bg-blue-500 py-3">
       <Container>
         <nav className="flex justify-between">
           <div className="flex items-center gap-20">
-            <h2 className="uppercase font-bold">Shiftlog.</h2>
+            <h2 className="uppercase font-bold text-2xl text-white">Shiftlog.</h2>
             <div className="flex items-center">
               <div className="bg-white text-dark px-2 py-1 rounded-l-md">
                 <AiOutlineSearch className="text-2xl" />

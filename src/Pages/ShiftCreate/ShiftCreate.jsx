@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../../components/Container/Container";
 
 const ShiftCreate = () => {
-  const onSubmit = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     const target = event.target;
     const name = target.name.value;
@@ -19,7 +19,7 @@ const ShiftCreate = () => {
             Create Shift
           </h1>
           <div className="lg:w-2/4 md:w-3/4 w-full px-10 py-20 rounded-md shadow-sm mx-auto bg-white ">
-            <form onClick={onSubmit} className="flex flex-col gap-5">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-5">
               <div className="flex flex-col gap-5">
                 <div className="flex flex-col">
                   <input
